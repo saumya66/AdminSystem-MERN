@@ -1,0 +1,109 @@
+.admin-col {
+	min-width: 15rem;
+	width: 20%;
+	display: flex;
+
+	height: 100%;
+	padding-left: 2rem;
+	padding-top: 2rem;
+	.admin-row {
+		margin-bottom: 1rem;
+		padding: 0.3rem;
+		width: 100%;
+		height: 24rem;
+		background-color: white;
+		border-radius: 15px;
+		box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.19),
+			0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+		.info {
+			margin-top: 1rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			width: 98%;
+			background-color: white;
+
+			img {
+				height: 6rem;
+				width: 6rem;
+				border-radius: 50%;
+				display: flex;
+				align-self: center;
+			}
+			.name {
+				margin-top: 1rem;
+				display: flex;
+				align-self: center;
+				font-size: 1.2rem;
+				font-weight: 400;
+
+				margin-bottom: 1.5rem;
+			}
+			.college {
+				border-top: 1px solid rgba(0, 0, 0, 0.2);
+				padding: 0.8rem 0;
+
+				span {
+					font-weight: 500;
+					font-size: 0.8rem;
+				}
+				font-size: 0.8rem;
+			}
+			.stats {
+				display: flex;
+				flex-direction: column;
+				.stats-heading {
+					background-color: white;
+					position: absolute;
+					top: 2;
+					left: 2;
+					font-weight: 400;
+					font-size: 1.2rem;
+					padding-right: 0.4rem;
+				}
+				.container {
+					height: 0.8rem;
+					border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+					margin-bottom: 1.5rem;
+				}
+				.stat {
+					display: flex;
+					height: 0.8rem;
+					justify-content: space-between;
+					margin-bottom: 1.5rem;
+					.title-info {
+						display: flex;
+						.fa {
+							color: rgba(0, 0, 0, 0.6);
+						}
+						.title {
+							color: rgba(0, 0, 0, 0.6);
+							margin: 0;
+							margin-left: 0.4rem;
+						}
+					}
+					.container-count {
+						height: 1.4rem;
+						width: 1.4rem;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						border-radius: 3px;
+
+						.count {
+							font-size: 0.8rem;
+							font-weight: 500;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 800px) {
+	.admin-col {
+		display: none;
+	}
+}
