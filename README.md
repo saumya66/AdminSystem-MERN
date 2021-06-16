@@ -10,9 +10,11 @@ This is a full Stack Adming Webapp where
 
 ## Screenshots
 <img src="https://user-images.githubusercontent.com/60464414/122258997-4d0aef80-ceef-11eb-8a9d-c18073b3c131.PNG" alt="drawing" width="200"/>
-![Phone](https://user-images.githubusercontent.com/60464414/122258997-4d0aef80-ceef-11eb-8a9d-c18073b3c131.PNG)
-![PC](https://user-images.githubusercontent.com/60464414/122259011-5005e000-ceef-11eb-9b3e-f18ac29afcfb.PNG)
-![iPad](https://user-images.githubusercontent.com/60464414/122259069-5eec9280-ceef-11eb-8031-3e671217531d.PNG) 
+
+<img src="https://user-images.githubusercontent.com/60464414/122259011-5005e000-ceef-11eb-9b3e-f18ac29afcfb.PNG" alt="drawing" width="200"/>
+
+<img src="https://user-images.githubusercontent.com/60464414/122259069-5eec9280-ceef-11eb-8031-3e671217531d.PNG" alt="drawing" width="200"/>
+  
 
 ## Tech Stack
 
