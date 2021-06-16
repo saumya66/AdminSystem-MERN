@@ -59,7 +59,6 @@ const MyVerticallyCenteredModal = (props) => {
 				</div>
 			</Modal.Body>
 
-			<Button onClick={props.onHide}>Close</Button>
 			<Button onClick={(props.onHide, () => props.onAdd(selectedSubs))}>
 				Add
 			</Button>

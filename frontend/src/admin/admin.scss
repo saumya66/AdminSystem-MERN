@@ -6,7 +6,7 @@
 	height: 100%;
 	padding-left: 2rem;
 	padding-top: 2rem;
-	.admin-row {
+	.admin-cont {
 		margin-bottom: 1rem;
 		padding: 0.3rem;
 		width: 100%;
@@ -29,6 +29,12 @@
 				width: 6rem;
 				border-radius: 50%;
 				display: flex;
+				align-self: center;
+			}
+			.admin {
+				margin: 0;
+				font-size: 0.9rem;
+				font-weight: 500;
 				align-self: center;
 			}
 			.name {
@@ -69,11 +75,13 @@
 				}
 				.stat {
 					display: flex;
-					height: 0.8rem;
+					height: 1.2rem;
+					align-items: center;
 					justify-content: space-between;
-					margin-bottom: 1.5rem;
+					margin-bottom: 0.5rem;
 					.title-info {
 						display: flex;
+						align-items: center;
 						.fa {
 							color: rgba(0, 0, 0, 0.6);
 						}
@@ -92,6 +100,7 @@
 						border-radius: 3px;
 
 						.count {
+							margin: 0;
 							font-size: 0.8rem;
 							font-weight: 500;
 						}

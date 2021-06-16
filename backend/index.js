@@ -16,17 +16,20 @@ app.get("/", (req, res) => {
 	res.send("Hi I'm the server");
 });
 app.use("/", router);
-
-const PORT = process.env.PORT || 3000;
-
-const URL = process.env.CONNECTION_URL;
+app.use("/", (req, res) => {
+	res.send("Hi I'm Server");
+});
+const URL =
+	"mongodb+srv://saumya66:1234main@cluster0.7uiud.mongodb.net/students?retryWrites=true&w=majority";
 mongodb
 	.connect(URL, {
 		useNewUrlParser: true,
 		useUnifiedTopology: true,
 	})
 	.then(() => {
-		app.listen(PORT, () => console.log("Server is listening on port " + PORT));
+		app.listen(process.env.PORT || 3000, () =>
+			console.log("Server is listening on port " + process.env.PORT)
+		);
 	})
 
 	.catch((err) => console.log(`Server is not running ${err}`));

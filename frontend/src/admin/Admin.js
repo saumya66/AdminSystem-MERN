@@ -19,11 +19,11 @@ export const StatComp = (props) => {
 const Admin = () => {
 	return (
 		<div className="admin-col">
-			<div className="admin-row">
+			<div className="admin-cont">
 				<div className="info">
 					<img src={adminPic} alt="" />
+					<p className="admin">Admin</p>
 					<h5 className="name">Saumya Ranjan Nayak</h5>
-
 					<p className="college">
 						<span>Institute : </span>Institue of Technical Education Research
 					</p>

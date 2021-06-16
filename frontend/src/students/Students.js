@@ -8,7 +8,7 @@ const Student = ({ data }) => {
 	const [curPage, setCurPage] = useState(1);
 
 	const nextPage = () => {
-		setCurPage((currcurPage) => currcurPage + 1);
+		setCurPage(curPage + 1);
 	};
 
 	const prevPage = () => {
@@ -27,8 +27,12 @@ const Student = ({ data }) => {
 		return arr;
 	};
 	const changeCurPage = (event) => {
-		setCurPage(event.target.textContent);
+		var page = Number(event.target.textContent);
+		setCurPage(page);
 	};
+	useEffect(() => {
+		console.log(curPage);
+	}, [curPage]);
 
 	return (
 		<div className="students">
@@ -44,7 +48,11 @@ const Student = ({ data }) => {
 				))}
 			</div>
 			<div className="pagination">
-				<button className="prev" onClick={prevPage}>
+				<button
+					className={`prev `}
+					onClick={prevPage}
+					disabled={curPage === 1 ? true : false}
+				>
 					Back
 				</button>
 				{getPaginationButton().map((pageNum) => (
@@ -53,8 +61,9 @@ const Student = ({ data }) => {
 					</button>
 				))}
 				<button
-					className={`next ${curPage === totalPage ? "disabled" : ""}`}
+					className={`next`}
 					onClick={nextPage}
+					disabled={curPage === totalPage ? true : false}
 				>
 					Next
 				</button>

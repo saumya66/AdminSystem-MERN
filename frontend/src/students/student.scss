@@ -30,6 +30,34 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		.prev {
+			background-color: white;
+			border: 0;
+			height: 2.6rem;
+			width: 4rem;
+			margin-right: 0.2rem;
+			border-radius: 15px;
+
+			box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.19),
+				0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+		.next {
+			background-color: white;
+			border: 0;
+			height: 2.6rem;
+			width: 4rem;
+			border: 0;
+
+			border-radius: 15px;
+			box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.19),
+				0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+		.btn {
+			background-color: white;
+			border: 0;
+			height: 2.6rem;
+			width: 2.6rem;
+		}
 	}
 }
 @media (max-width: 800px) {

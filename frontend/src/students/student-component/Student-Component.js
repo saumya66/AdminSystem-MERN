@@ -18,10 +18,10 @@ const StudentComponent = (props) => {
 		};
 		console.log(updatedUser);
 		const newPerson = await axios.patch(
-			`http://localhost:5000/students/${props.id}/update`,
+			`https://mainteny-admin.herokuapp.com/students/${props.id}/update`,
 			updatedUser
 		);
-		Location.reload(false);
+		window.location.reload(false);
 	};
 
 	const CourseComp = ({ course }) => {
@@ -50,7 +50,7 @@ const StudentComponent = (props) => {
 			<MyVerticallyCenteredModal
 				show={modalShow}
 				onHide={() => setModalShow(false)}
-				onAdd={postUpdate}
+				onAdd={postUpdate}	
 				takenCourses={props.courses}
 			/>
 		</div>
